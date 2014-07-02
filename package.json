@@ -1,0 +1,17 @@
+{
+  "name": "serveur",
+  "description": "Serveur système chat/assistance temps réel",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "socket.io": "0.9.x",
+    "ent": "0.1.x",
+    "yuidocjs": "0.3.x",
+    "bunyan" : "0.22.x",
+    "socket.io-client" : "0.9.x",
+    "sinon" : "1.9.x",
+    "chai" : "1.9.x",
+    "connect-redis" : "1.4.7"
+  }
+}

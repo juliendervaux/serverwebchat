@@ -1,0 +1,568 @@
+{
+    "project": {},
+    "files": {
+        "app_model\\Chat.js": {
+            "name": "app_model\\Chat.js",
+            "modules": {},
+            "classes": {
+                "Chat": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app_model\\Manager.js": {
+            "name": "app_model\\Manager.js",
+            "modules": {},
+            "classes": {
+                "Manager": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app_model\\Operator.js": {
+            "name": "app_model\\Operator.js",
+            "modules": {},
+            "classes": {
+                "Operator": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app_model\\Person.js": {
+            "name": "app_model\\Person.js",
+            "modules": {},
+            "classes": {
+                "Person": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app_model\\Room.js": {
+            "name": "app_model\\Room.js",
+            "modules": {},
+            "classes": {
+                "Room": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app_model\\User.js": {
+            "name": "app_model\\User.js",
+            "modules": {},
+            "classes": {
+                "User": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app_model\\model_utils.js": {
+            "name": "app_model\\model_utils.js",
+            "modules": {},
+            "classes": {
+                "Fonctions utilitaires": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Chat": {
+            "name": "Chat",
+            "shortname": "Chat",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app_model\\Chat.js",
+            "line": 1,
+            "description": "Modélisation d'un chat (celui avec des gens qui discutent, pas le truc qui dort toute la journée à rien foutre)"
+        },
+        "Manager": {
+            "name": "Manager",
+            "shortname": "Manager",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app_model\\Manager.js",
+            "line": 1,
+            "description": "Modélisation d'un manager",
+            "extends": "Person"
+        },
+        "Operator": {
+            "name": "Operator",
+            "shortname": "Operator",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app_model\\Operator.js",
+            "line": 1,
+            "description": "Modélisation d'un opérateur",
+            "extends": "Person"
+        },
+        "Person": {
+            "name": "Person",
+            "shortname": "Person",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app_model\\Person.js",
+            "line": 1,
+            "description": "Modélisation d'une personne"
+        },
+        "Room": {
+            "name": "Room",
+            "shortname": "Room",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app_model\\Room.js",
+            "line": 1,
+            "description": "Modélisation d'un salon de chat"
+        },
+        "User": {
+            "name": "User",
+            "shortname": "User",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app_model\\User.js",
+            "line": 2,
+            "description": "Modélisation d'un utilisateur",
+            "extends": "Person"
+        },
+        "Fonctions utilitaires": {
+            "name": "Fonctions utilitaires",
+            "shortname": "Fonctions utilitaires",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app_model\\model_utils.js",
+            "line": 1,
+            "description": "Fonctions utilitaires"
+        }
+    },
+    "classitems": [
+        {
+            "file": "app_model\\Chat.js",
+            "line": 13,
+            "description": "Constructeur",
+            "is_constructor": 1,
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 18,
+            "description": "Id",
+            "itemtype": "property",
+            "name": "id",
+            "type": "int",
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 24,
+            "description": "Date de début du chat (timestamp)",
+            "itemtype": "property",
+            "name": "timeStart",
+            "type": "int",
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 30,
+            "description": "Date de fin du chat (timstamp)",
+            "itemtype": "property",
+            "name": "timeEnd",
+            "type": "int",
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 36,
+            "description": "Liste des salons de chat en cours",
+            "itemtype": "property",
+            "name": "rooms",
+            "type": "Array<Room>",
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 42,
+            "description": "Liste des utilisateurs du chat",
+            "itemtype": "property",
+            "name": "rooms",
+            "type": "Array<User>",
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 48,
+            "description": "Liste des opérateurs",
+            "itemtype": "property",
+            "name": "operators",
+            "type": "Array<Operator>",
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 54,
+            "description": "Manager du chat",
+            "itemtype": "property",
+            "name": "manager",
+            "type": "Manager",
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 63,
+            "itemtype": "method",
+            "name": "getId",
+            "return": {
+                "description": "id du Chat",
+                "type": "Int"
+            },
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 70,
+            "itemtype": "method",
+            "name": "getTimeStart",
+            "return": {
+                "description": "Timestamp du début de la session de chat",
+                "type": "Int"
+            },
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 77,
+            "itemtype": "method",
+            "name": "getTimeEnd",
+            "return": {
+                "description": "Timestamp de la fin de session de chat",
+                "type": "Int"
+            },
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 84,
+            "itemtype": "method",
+            "name": "getRooms",
+            "return": {
+                "description": "Liste des salons de chat en cours",
+                "type": "Array<Room>"
+            },
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 91,
+            "itemtype": "method",
+            "name": "getUsers",
+            "return": {
+                "description": "Liste des utilisateurs connecté au chat",
+                "type": "Array<User>"
+            },
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 98,
+            "itemtype": "method",
+            "name": "getOperators",
+            "return": {
+                "description": "Liste des opérateurs présents",
+                "type": "Array<Operator>"
+            },
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 105,
+            "itemtype": "method",
+            "name": "getManager",
+            "return": {
+                "description": "Manager du chat",
+                "type": "Manager"
+            },
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 112,
+            "itemtype": "method",
+            "name": "addUser",
+            "params": [
+                {
+                    "name": "user",
+                    "description": "Utilisateur ajouté",
+                    "type": "User"
+                }
+            ],
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 119,
+            "itemtype": "method",
+            "name": "addRoom",
+            "params": [
+                {
+                    "name": "room",
+                    "description": "Salon de chat ajouté",
+                    "type": "Room"
+                }
+            ],
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 126,
+            "itemtype": "method",
+            "name": "addOperator",
+            "params": [
+                {
+                    "name": "operator",
+                    "description": "Opérateur ajouté",
+                    "type": "Operator"
+                }
+            ],
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Chat.js",
+            "line": 133,
+            "itemtype": "method",
+            "name": "setManager",
+            "params": [
+                {
+                    "name": "manager",
+                    "description": "Manager du chat",
+                    "type": "Manager"
+                }
+            ],
+            "class": "Chat"
+        },
+        {
+            "file": "app_model\\Manager.js",
+            "line": 17,
+            "description": "Constructeur",
+            "is_constructor": 1,
+            "class": "Manager"
+        },
+        {
+            "file": "app_model\\Person.js",
+            "line": 11,
+            "description": "Constructeur",
+            "is_constructor": 1,
+            "class": "Person"
+        },
+        {
+            "file": "app_model\\Person.js",
+            "line": 16,
+            "description": "Nom Personne",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "class": "Person"
+        },
+        {
+            "file": "app_model\\Person.js",
+            "line": 25,
+            "itemtype": "method",
+            "name": "getName",
+            "return": {
+                "description": "id du Chat",
+                "type": "String"
+            },
+            "class": "Person"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 11,
+            "description": "Constructeur",
+            "is_constructor": 1,
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 16,
+            "description": "Id",
+            "itemtype": "property",
+            "name": "id",
+            "type": "int",
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 22,
+            "description": "Utilisateur",
+            "itemtype": "property",
+            "name": "user",
+            "type": "User",
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 28,
+            "description": "Operateur",
+            "itemtype": "property",
+            "name": "operator",
+            "type": "Operator",
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 34,
+            "description": "Flux des messages échangés entre les deux acteurs",
+            "itemtype": "property",
+            "name": "streamText",
+            "type": "Array<Message>",
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 43,
+            "itemtype": "method",
+            "name": "getId",
+            "return": {
+                "description": "id du Chat",
+                "type": "Int"
+            },
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 50,
+            "itemtype": "method",
+            "name": "getUser",
+            "return": {
+                "description": "Utilisateur du chat",
+                "type": "User"
+            },
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 57,
+            "itemtype": "method",
+            "name": "getOperator",
+            "return": {
+                "description": "Opérateur du chat",
+                "type": "Operator"
+            },
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 64,
+            "itemtype": "method",
+            "name": "getStreamText",
+            "return": {
+                "description": "Tableau des messages échangés",
+                "type": "Array<Message>"
+            },
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 71,
+            "itemtype": "method",
+            "name": "setUser",
+            "params": [
+                {
+                    "name": "Utilisateur",
+                    "description": "à ajouter",
+                    "type": "User"
+                }
+            ],
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 78,
+            "itemtype": "method",
+            "name": "setOperator",
+            "params": [
+                {
+                    "name": "Opérateur",
+                    "description": "à ajouter",
+                    "type": "Operator"
+                }
+            ],
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\Room.js",
+            "line": 85,
+            "itemtype": "method",
+            "name": "addTextToStream",
+            "params": [
+                {
+                    "name": "person",
+                    "description": "Auteur du message (opérateur ou user)",
+                    "type": "Person"
+                },
+                {
+                    "name": "text",
+                    "description": "Contenu du message",
+                    "type": "String"
+                }
+            ],
+            "class": "Room"
+        },
+        {
+            "file": "app_model\\model_utils.js",
+            "line": 7,
+            "description": "Cette méthode réalise du polyfill sur la méthode permettant un héritage entre des objets javascript\nEcmascript 5 introduit une méthode pour réaliser un héritage facilement mais les anciens navigateurs ne reconnaisent pas cette méthode",
+            "itemtype": "method",
+            "name": "inherit",
+            "params": [
+                {
+                    "name": "p",
+                    "description": "objet dont on veut hériter",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Objet clone contenant uniquement le prototype et pas le constructeur permettant de simuler un comportement d'héritage classique",
+                "type": "Object"
+            },
+            "class": "Fonctions utilitaires"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nConstructeur",
+            "line": " app_model\\Chat.js:13"
+        },
+        {
+            "message": "Missing item type\nConstructeur",
+            "line": " app_model\\Manager.js:17"
+        },
+        {
+            "message": "Missing item type\nConstructeur",
+            "line": " app_model\\Person.js:11"
+        },
+        {
+            "message": "Missing item type\nConstructeur",
+            "line": " app_model\\Room.js:11"
+        }
+    ]
+}
